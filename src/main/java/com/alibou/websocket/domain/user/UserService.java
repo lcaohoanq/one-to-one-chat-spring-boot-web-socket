@@ -1,6 +1,7 @@
-package com.alibou.websocket.user;
+package com.alibou.websocket.domain.user;
 
 
+import com.alibou.websocket.enums.Status;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

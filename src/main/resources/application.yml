@@ -9,3 +9,9 @@ spring:
       authentication-database: admin
 server:
   port: 8088
+
+springdoc:
+  swagger-ui:
+    enabled: true
+  api-docs:
+    enabled: true

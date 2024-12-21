@@ -1,5 +1,6 @@
-package com.alibou.websocket.user;
+package com.alibou.websocket.domain.user;
 
+import com.alibou.websocket.enums.Status;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;

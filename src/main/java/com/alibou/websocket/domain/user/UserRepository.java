@@ -1,5 +1,6 @@
-package com.alibou.websocket.user;
+package com.alibou.websocket.domain.user;
 
+import com.alibou.websocket.enums.Status;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.alibou.websocket.chatroom;
+package com.alibou.websocket.domain.chatroom;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
