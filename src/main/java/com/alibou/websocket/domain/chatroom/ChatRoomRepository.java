@@ -1,9 +1,8 @@
 package com.alibou.websocket.domain.chatroom;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
-
 import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ChatRoomRepository extends MongoRepository<ChatRoom, String> {
+public interface ChatRoomRepository extends JpaRepository<ChatRoom, String> {
     Optional<ChatRoom> findBySenderIdAndRecipientId(String senderId, String recipientId);
 }

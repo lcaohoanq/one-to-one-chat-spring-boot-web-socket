@@ -1,12 +1,15 @@
 spring:
-  data:
-    mongodb:
-      username: alibou
-      password: alibou
-      host: localhost
-      port: 27017
-      database: chat_app
-      authentication-database: admin
+  datasource:
+    url: jdbc:postgresql://localhost:5432/chat_app
+    username: ${POSTGRES_USER:PROD_DB_DEV_USER}
+    password: ${POSTGRES_PASSWORD:PROD_DB_DEV_PASSWORD}
+  
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    
 server:
   port: 8088
 
